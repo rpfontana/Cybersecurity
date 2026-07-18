@@ -1,4 +1,4 @@
-# Reverse Engineering Writeup
+# 🔑 Reverse Engineering Writeup
 
 Running the binary shows that we need to provide the correct input in order to reach the `print_flag` function:
 
@@ -55,6 +55,8 @@ So the program expects `input[i] - 1` to be equal to `FEDCBA`. To get the requir
 ```text
 FEDCBA -> GFEDCB
 ```
+
+### 🚩 Flag 
 
 Using `GFEDCB` as input successfully reaches the flag:
 

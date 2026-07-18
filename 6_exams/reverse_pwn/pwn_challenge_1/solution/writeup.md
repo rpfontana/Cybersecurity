@@ -1,4 +1,4 @@
-# Buffer Overflow Writeup
+# 🔑 Overflow Writeup
 
 Running the binary shows that the goal is to reach the `print_flag` function by providing the correct input:
 
@@ -75,6 +75,8 @@ AAAAAAAAAA + ABCD + DCBA
 ```
 
 The first `10` characters fill `local_1e` and `local_16`, `ABCD` overwrites `local_14`, and `DCBA` overwrites `local_10`.
+
+### 🚩 Flag 
 
 Running the binary with this input prints the flag:
 
