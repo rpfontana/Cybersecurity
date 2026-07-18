@@ -1,4 +1,4 @@
-# ItaToWorldCup2026 Writeup
+# 🔑 Writeup
 
 The login form appears to build an SQL query similar to this one:
 
@@ -15,6 +15,8 @@ The username can be any value. In the password field, we can submit:
 ```
 
 This closes the original string, executes a second query that adds Italy to the database, and comments out the rest of the original query.
+
+### 🚩 Flag
 
 After submitting the payload, the application returns the flag:
 

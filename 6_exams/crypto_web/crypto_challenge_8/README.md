@@ -2,7 +2,7 @@
 
 Welcome to the **CyberChef Kitchen**, young crypto apprentice!
 
-## Scenario
+### 📄 Scenario
 
 The Michelin-starred Chef of the CyberChef Kitchen has just plated his
 signature dish, the *"flag en papillote"*, and served it cold, wrapped
@@ -29,7 +29,7 @@ and would never pick anything outside his own kitchen vocabulary: a
 short, common English word, written as one would shout it across a
 busy service with 7 letters.
 
-## Deliverables
+### 📦 Deliverables
 
 Recover the flag in the form `spritz{...}` and report the full recipe and charactiristics of each ingridient.
 

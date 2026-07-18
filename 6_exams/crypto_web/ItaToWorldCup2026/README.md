@@ -1,7 +1,6 @@
-# Description
 # Ita To World Cup 2026
 
-## Context
+### 📄 Context
 
 The FIFA World Cup 2026 is just around the corner and the 48 qualified national teams have already been registered into the official bracket manager. As soon as the registration window closes, the system will automatically generate the 12 groups of the tournament, and from that moment on the list of participants will be frozen forever.
 
@@ -13,14 +12,14 @@ Deep inside the FIFA control room, an automated *Bracket Officer* is on duty aro
 
 Your mission is therefore simple: help the hacker turn their reconnaissance into a working exploit and get Italy back into the World Cup before the bracket is frozen.
 
-## Rules
+### ⛔ Rules
 IN THIS CHALLENGE YOU CANNOT LOOK AT THE webapp FOLDER!
 
 In order to get the points of this challenge, you need to provide a
 detailed description of the procedure that you used to get the flag.
 Otherwise we account for the flag as read by the web application folder itself.
 
-## Deployment
+### 🐋 Deployment
 ```bash
 # Build the container
 docker build --network=host -t cpp/itatoworldcup2026 .

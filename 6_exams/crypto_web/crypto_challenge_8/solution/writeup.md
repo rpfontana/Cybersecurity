@@ -1,4 +1,4 @@
-# CyberChef Writeup
+# 🔑 Writeup
 
 The challenge provides the following encrypted flag:
 
@@ -23,6 +23,7 @@ This is still not the flag, but the description also mentions a more advanced al
 ```text
 KITCHEN
 ```
+### 🚩 Flag
 
 Decrypting with Vigenere finally reveals the flag:
 
