@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css">
+    <title>FIFA World Cup 2026 — Official Bracket Manager</title>
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <img src="{{ url_for('static', filename='2026_FIFA_World_Cup_emblem.svg.webp') }}"
+                 alt="FIFA World Cup 2026 emblem" class="emblem">
+            <div class="brand-text">
+                <span class="brand-title">FIFA World Cup 26&trade;</span>
+                <span class="brand-sub">Official Bracket Management System</span>
+            </div>
+        </div>
+        <nav class="topnav">
+            <span class="navlink">Tournament</span>
+            <span class="navlink">Teams</span>
+            <span class="navlink">Groups</span>
+            <span class="navlink active">Staff Area</span>
+        </nav>
+    </header>
+
+    <main class="hero hero-centered">
+        <section class="hero-right">
+            <div class="login-card">
+                <img src="{{ url_for('static', filename='2026_FIFA_World_Cup_emblem.svg.webp') }}"
+                     alt="" class="login-emblem">
+                <h2>Staff Sign-In</h2>
+                <p class="login-sub">Authorized personnel only.</p>
+                <form action="/" method="post" class="login-form">
+                    <label>
+                        <span>Username</span>
+                        <input type="text" name="username" placeholder="e.g. fifa_admin" required/>
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input type="password" name="password" placeholder="••••••••" required/>
+                    </label>
+                    <button type="submit" class="btn">Sign In</button>
+                </form>
+
+                {% if nologin %}
+                <div class="alert">
+                    <strong>ACCESS DENIED</strong>
+                    <span>Invalid credentials. Attempt logged.</span>
+                </div>
+                {% endif %}
+            </div>
+        </section>
+    </main>
+
+    {% if flag %}
+    <section class="flag-banner">
+        <div class="flag-inner">
+            <div class="flag-headline">
+                <span class="flag-pill">BREAKING</span>
+                Italy has been added to the bracket &mdash; groups have been generated!
+            </div>
+            <div class="flag-code">FLAG: {{ flag }}</div>
+        </div>
+    </section>
+    {% endif %}
+
+    <footer class="footer">
+        <span>&copy; FIFA World Cup 26&trade; Bracket Manager</span>
+        <span class="footer-sep">|</span>
+        <span>v1.0.3</span>
+        <span class="footer-sep">|</span>
+        <span>Internal use only</span>
+    </footer>
+</body>
+</html>
